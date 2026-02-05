@@ -1,0 +1,45 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Add Privacy Policy page and footer link for Rankawat Web Solutions",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "summary": "Add a new /privacy-policy page that renders the Rankawat Web Solutions Privacy Policy in English with section headings and Last Updated date set to 05 Feb 2026.",
+      "acceptanceCriteria": [
+        "Navigating to /privacy-policy renders a Privacy Policy page.",
+        "The page includes the company name \"Rankawat Web Solutions\" and shows \"Last Updated: 05 Feb 2026\".",
+        "The page includes the 8 sections reflected in the user-provided policy (Information We Collect, How We Use Your Information, Data Security, Cookies Policy, Third-Party Services, User Rights, Changes to This Privacy Policy, Contact Us).",
+        "The page includes the provided contact details: Mobile: 76910 29526 and Email: rankawatwebsolutions09@gmail.com.",
+        "Content is presented in English (user-facing text on this page is English)."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/pages/PrivacyPolicyPage.tsx",
+          "operation": "create",
+          "description": "Create a new PrivacyPolicyPage component that displays: page title \"Privacy Policy\", company name \"Rankawat Web Solutions\", \"Last Updated: 05 Feb 2026\", and 8 clearly separated English sections with headings (Information We Collect, How We Use Your Information, Data Security, Cookies Policy, Third-Party Services, User Rights, Changes to This Privacy Policy, Contact Us) including contact details Mobile: 76910 29526 and Email: rankawatwebsolutions09@gmail.com."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Register a new TanStack Router route for path \"/privacy-policy\" and wire it into the existing route tree so the new PrivacyPolicyPage is reachable via client-side navigation."
+        }
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "summary": "Add a Privacy Policy link to the footer Quick Links that navigates to /privacy-policy via client-side routing.",
+      "acceptanceCriteria": [
+        "Footer \"Quick Links\" includes a \"Privacy Policy\" link/button.",
+        "Clicking \"Privacy Policy\" navigates to /privacy-policy without a full page reload."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/Footer.tsx",
+          "operation": "modify",
+          "description": "Add a new \"Privacy Policy\" item to the footer translations quick links map (for both supported languages) using key \"privacy-policy\" so the existing useNavigate-based handleNavigation routes to \"/privacy-policy\" without a full page reload."
+        }
+      ]
+    }
+  ]
+}

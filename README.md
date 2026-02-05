@@ -1,2 +1,3 @@
-# rankawat-web-solutions-professional-website
-Exported from Caffeine project: Rankawat Web Solutions Professional Website
+## 
+
+To run app build and run docker image: `docker build -t app . docker run -it --network host app`

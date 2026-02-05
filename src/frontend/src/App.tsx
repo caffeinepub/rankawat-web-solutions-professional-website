@@ -7,6 +7,7 @@ import HomePage from './pages/HomePage';
 import ServicesPage from './pages/ServicesPage';
 import OffersPage from './pages/OffersPage';
 import AdminPage from './pages/AdminPage';
+import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
 
 const queryClient = new QueryClient();
 
@@ -39,7 +40,13 @@ const adminRoute = createRoute({
   component: AdminPage,
 });
 
-const routeTree = rootRoute.addChildren([homeRoute, servicesRoute, offersRoute, adminRoute]);
+const privacyPolicyRoute = createRoute({
+  getParentRoute: () => rootRoute,
+  path: '/privacy-policy',
+  component: PrivacyPolicyPage,
+});
+
+const routeTree = rootRoute.addChildren([homeRoute, servicesRoute, offersRoute, adminRoute, privacyPolicyRoute]);
 
 const router = createRouter({ routeTree });
 

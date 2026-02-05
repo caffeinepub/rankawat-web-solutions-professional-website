@@ -1,0 +1,46 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-create-a-new-frontend-page-at-route-privacy-policy-that-displays-the-provided-privacy-policy-content-for-rankawat-web-solutions-with-a-clear-page-title-and-section-headings-and-set-last-updated-to-05-feb-2026",
+      "featureTitle": "Create a new frontend page at route \"/privacy-policy\" that displays the provided Privacy Policy content for \"Rankawat Web Solutions\" with a clear page title and section headings, and set \"Last Updated\" to \"05 Feb 2026\".",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/pages/PrivacyPolicyPage.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "blob-storage@4.0.0",
+        "authorization@4.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-a-privacy-policy-navigation-entry-in-the-site-footer-quick-links-that-routes-to-privacy-policy",
+      "featureTitle": "Add a \"Privacy Policy\" navigation entry in the site footer quick links that routes to \"/privacy-policy\".",
+      "files": [
+        "frontend/src/components/Footer.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "blob-storage@4.0.0",
+        "authorization@4.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-2"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

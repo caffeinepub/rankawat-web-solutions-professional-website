@@ -1,0 +1,57 @@
+{
+  "kind": "build_request",
+  "title": "Add Privacy Policy page for Rankawat Web Solutions",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "text": "Create a new frontend page at route \"/privacy-policy\" that displays the provided Privacy Policy content for \"Rankawat Web Solutions\" with a clear page title and section headings, and set \"Last Updated\" to \"05 Feb 2026\".",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-7"
+        ],
+        "quotes": [
+          "Add my private policy",
+          "Last Updated: [date daal sakte ho – jaise 05 Feb 2026]"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Navigating to /privacy-policy renders a Privacy Policy page.",
+        "The page includes the company name \"Rankawat Web Solutions\" and shows \"Last Updated: 05 Feb 2026\".",
+        "The page includes the 8 sections reflected in the user-provided policy (Information We Collect, How We Use Your Information, Data Security, Cookies Policy, Third-Party Services, User Rights, Changes to This Privacy Policy, Contact Us).",
+        "The page includes the provided contact details: Mobile: 76910 29526 and Email: rankawatwebsolutions09@gmail.com.",
+        "Content is presented in English (user-facing text on this page is English)."
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "text": "Add a \"Privacy Policy\" navigation entry in the site footer quick links that routes to \"/privacy-policy\".",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-7"
+        ],
+        "quotes": [
+          "Add my private policy"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Footer \"Quick Links\" includes a \"Privacy Policy\" link/button.",
+        "Clicking \"Privacy Policy\" navigates to /privacy-policy without a full page reload."
+      ]
+    }
+  ],
+  "constraints": [
+    "Do not edit files under frontend/src/components/ui (read-only).",
+    "Do not modify frontend/src/hooks/useInternetIdentity.ts, frontend/src/hooks/useInternetIdentity.tsx, frontend/src/hooks/useActor.ts, or frontend/src/main.tsx (immutable paths)."
+  ],
+  "nonGoals": [
+    "Do not implement any backend storage or API changes for the Privacy Policy.",
+    "Do not add third-party analytics, cookie banners, or consent-management tooling as part of this change."
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  }
+}

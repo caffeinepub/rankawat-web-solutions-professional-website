@@ -21,6 +21,7 @@ const translations = {
       services: 'Services',
       offers: 'Offers',
       admin: 'Admin Panel',
+      'privacy-policy': 'Privacy Policy',
     },
   },
   hi: {
@@ -37,6 +38,7 @@ const translations = {
       services: 'सेवाएं',
       offers: 'ऑफर',
       admin: 'एडमिन पैनल',
+      'privacy-policy': 'गोपनीयता नीति',
     },
   },
 };

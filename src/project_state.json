@@ -1,0 +1,38 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 3,
+  "summary": "Website/project for Rankawat Web Solutions, including publishing a Privacy Policy page.",
+  "architectural_notes": [],
+  "known_issues": [],
+  "isFixRequest": false,
+  "existing_features": [
+    {
+      "id": "feature-create-a-new-frontend-page-at-route-privacy-policy-that-displays-the-provided-privacy-policy-content-for-rankawat-web-solutions-with-a-clear-page-title-and-section-headings-and-set-last-updated-to-05-feb-2026",
+      "title": "Create a new frontend page at route \"/privacy-policy\" that displays the provided Privacy Policy content for \"Rankawat Web Solutions\" with a clear page title and section headings, and set \"Last Updated\" to \"05 Feb 2026\".",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-privacy-policy-navigation-entry-in-the-site-footer-quick-links-that-routes-to-privacy-policy",
+      "title": "Add a \"Privacy Policy\" navigation entry in the site footer quick links that routes to \"/privacy-policy\".",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Add a Privacy Policy page (content provided) to the website, with last updated date (e.g., 05 Feb 2026).",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Rankawat Web Solutions",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}
